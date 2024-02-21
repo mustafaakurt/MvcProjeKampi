@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICategoryDal.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Migrations\202402211559538_mig1.cs" />
     <Compile Include="Migrations\202402211559538_mig1.Designer.cs">
