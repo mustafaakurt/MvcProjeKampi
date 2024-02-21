@@ -11,8 +11,10 @@ namespace BusinessLayer.Concrete
         public int ContentID { get; set; }
         public String ContentValue { get; set; }
         public DateTime ContentDate { get; set; }
-        // ContentWriter
-        // ContentTitle
 
+        public int HeadingID { get; set; }
+        public virtual Heading Heading { get; set; }
+
+        // ContentWriter
     }
 }
