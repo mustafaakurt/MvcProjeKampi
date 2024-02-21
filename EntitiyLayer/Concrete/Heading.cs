@@ -1,12 +1,11 @@
-﻿using EntitiyLayer.Concrete;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer.Concrete
+namespace EntitiyLayer.Concrete
 {
     public class Heading
     {

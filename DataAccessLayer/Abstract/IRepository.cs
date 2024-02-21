@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IRepository
+    public interface IRepository<T>
     {
         // CRUD
         // Type Name();
         // T bir generic typedır.
-        List<T> List<T>();
+        List<T> List();
 
-        void Insert<T>(T p);
-        void Update<T>(T p);
-        void Delete<T>(T p);
+        void Insert(T p);
+        void Update(T p);
+        void Delete(T p);
+
+        List<T> List(Expression<Func<T, bool>> filter); // Linq sorgusu yazabilmek için.
+                                                        // Şartlı listeleme yapabilmek için.
     }
 }

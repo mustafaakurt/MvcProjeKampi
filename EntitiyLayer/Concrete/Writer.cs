@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BusinessLayer.Concrete
+namespace EntitiyLayer.Concrete
 {
     public class Writer
     {
