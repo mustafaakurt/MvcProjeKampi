@@ -14,5 +14,8 @@ namespace BusinessLayer.Concrete
         public String WriterImage { get; set; }
         public String WriterMail { get; set; }
         public String WriterPassword { get; set; }
+
+        public ICollection<Heading> Headings { get; set; }
+        public ICollection<Content> Contents { get; set; }
     }
 }
