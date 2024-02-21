@@ -1,5 +1,4 @@
-﻿using BusinessLayer.Concrete;
-using EntitiyLayer.Concrete;
+﻿using EntitiyLayer.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
