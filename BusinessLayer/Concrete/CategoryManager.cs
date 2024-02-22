@@ -13,35 +13,16 @@ namespace BusinessLayer.Concrete
     public class CategoryManager : ICategoryService
     {
 
-        ICategoryDal _categorydal;
+        ICategoryDal _categoryDal;
 
-
-
-        /*
-         * GenericRepository<Category> repo = new GenericRepository<Category>();
-         * public List<Category> GetAllBL()
+        public CategoryManager(ICategoryDal categorydal)
         {
-            return repo.List();
+            _categoryDal = categorydal;
         }
-
-        public void CategoryAddBL(Category p)
-        {
-            if (p.CategoryName == "" || p.CategoryName.Length <= 3 ||
-                p.CategoryDescription == "" || p.CategoryName.Length >= 51)
-            {
-                // hata mesajı
-            }
-            else
-            {
-            
-                //repo.Insert(p);
-            }
-         }
-        */
 
         public List<Category> GetList()
         {
-            return null;
+            return _categoryDal.List();
         }
     }
 }
